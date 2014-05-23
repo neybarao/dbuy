@@ -75,11 +75,27 @@
 									<form>
 										<input type="text" placeholder="Seu Email">
 										<input type="text" placeholder="Código Promocional">
-										<button type="submit" class="btn-tell">Enviar</button>
+										<button type="submit" class="btn-tell" data-toggle="modal" data-target="#myModal">Enviar</button>
 									</form>
 								</div>
 							</header>
 						</div>
+						
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title" id="myModalLabel">Obrigado!</h4>
+									</div>
+									<div class="modal-body">
+										whoa
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- .Modal -->
 
 						<div class="col-md-6">
 							<img src="images/devices.png" class="devices-img img-responsive" alt="Baixe o aplicativo do Dbuy em seu iPhone ou Android">
@@ -229,8 +245,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9 col-sm-12">
-						<img src="images/dbuy-orange.png" class="visible-lg visible-md footer-logo" alt="Dbuy - Seu aplicativo móvel de ofertas locais">
-						<img src="images/dbuy-orange@2x.png" class="visible-sm visible-xs footer-logo" alt="Dbuy - Seu aplicativo móvel de ofertas locais" width="77">
+						<img src="images/dbuy-orange.png" class="visible-lg visible-md footer-logo" alt="Dbuy - Seu aplicativo móvel de ofertas locais" width="70">
+						<img src="images/dbuy-orange@2x.png" class="visible-sm visible-xs footer-logo" alt="Dbuy - Seu aplicativo móvel de ofertas locais" width="70">
 
 						<p>dbuy 2014 - Todos os direitos reservados</p>
 						<p><a href="#">Termos de uso</a> • <a href="#">Política de privacidade</a></p>
@@ -245,6 +261,7 @@
 		</div>
 
 		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/bootstrap/modal.js"></script>
 		<script src="js/owlcarousel/owl.carousel.js"></script>
 		<script src="js/bootstrap/scrollspy.js"></script>
 
@@ -268,7 +285,5 @@
 				});
 			});
 		</script>
-
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	</body>
 </html>
