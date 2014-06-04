@@ -68,7 +68,7 @@ html, body
 		position: relative
 		float: left
 		width: 107px
-		margin-top: 40px
+		margin-top: 50px
 
 	.header-menu
 		position: relative
@@ -138,6 +138,9 @@ html, body
 		position: relative
 		bottom: -9px
 		margin: auto
+
+.no-devices
+	height: 140px !important
 
 #how-it-works
 	background-color: #e9f6ff
@@ -241,6 +244,19 @@ html, body
 		&:hover
 			color: #8374c8
 
+#plain-text
+	background: #f7f8fa
+	padding: 50px 0
+
+	h1
+		font-weight: 100
+	h2
+		+adjust-font-size-to(24px)
+		margin: 30px 0
+	p
+		+adjust-font-size-to(16px)
+		line-height: 1.7em
+
 #footer
 	padding: 50px 0
 	+adjust-font-size-to(14px)
@@ -256,10 +272,9 @@ html, body
 		text-decoration: underline
 		&:hover
 			color: #8374c8
-	.social
-		img
-			position: relative
-			float: right
+	// .social
+	// 	img
+	// 		position: relative
 
 
 .social-share
@@ -300,7 +315,6 @@ html, body
 	vertical-align: middle
 	font-size: 60px
 	+border-radius(50px)
-
 
 @media screen and (min-width: 1200px)
 	#header
