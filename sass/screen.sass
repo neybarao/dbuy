@@ -109,30 +109,20 @@ html, body
 		line-height: 1em
 
 	.tell-me
-		form
-			height: 40px
-		input
-			position: relative
+		.form-group
 			width: 35%
-			border: none
-			+border-radius(4px)
-			+adjust-font-size-to(16px)
-			text-indent: 10px
-			height: 32px
-			margin-right: 0 5% 0 0
-			background: white
+			label
+				display: block
+				color: white
+				font-weight: 300
+			input
+				width: 100%
 		button
-			position: relative
-			width: 20%
 			background: #6dbf15
-			+border-radius(4px)
-			+adjust-font-size-to(16px)
-			height: 30px
 			text-transform: uppercase
 			color: white
-			border: none
-			font-family: 'Montserrat', 'sans-serif'
-			margin: 0
+			position: relative
+			top: 11px
 
 	.devices-img
 		position: relative
@@ -357,19 +347,10 @@ html, body
 			position: relative
 			bottom: 0
 		.tell-me
-			form
-				height: auto
-			input
-				width: 50%
-				+adjust-font-size-to(16px)
-				height: 42px
-				display: block
-				margin: 10px auto
-			button
-				width: 50%
-				height: 42px
-				margin: 0 auto 20px
-				display: block
+			text-align: center
+			margin-bottom: 20px
+			.form-group
+				width: auto
 
 	#how-it-works
 		background-size: cover
@@ -378,6 +359,7 @@ html, body
 			line-height: 1em
 
 	#create-offer
+		text-align: center
 		h2
 			+adjust-font-size-to(36px)
 			line-height: 1em
@@ -409,12 +391,12 @@ html, body
 				margin: auto
 
 @media screen and (max-width: 640px)
-	#menu-icon
-		display: block
-		position: absolute
-		top: 20px
-		left: 15px
-		width: 30px
+	// #menu-icon
+	// 	display: block
+	// 	position: absolute
+	// 	top: 20px
+	// 	left: 15px
+	// 	width: 30px
 
 	#header
 		height: auto
@@ -440,12 +422,11 @@ html, body
 		.header-menu
 			display: none
 		.tell-me
-			input
-				width: 90%
 			button
-				width: 90%
+				width: 100%
 
 	#create-offer
+		text-align: center
 		.darker-box
 			+border-radius(0)
 
